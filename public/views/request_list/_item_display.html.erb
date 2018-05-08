@@ -1,1 +1,10 @@
-<%= render partial: 'shared/result', locals: {:result => item, :props => {} } %>
+<% @item_count ||= 0; @item_count += 1 %>
+
+<div class="recordinfo">
+  <h3>
+    <%= @item_count %>. &nbsp; &nbsp;
+    <a class="record-title" href="<%= app_prefix(item.uri) %>">  <%== item.display_string %></a>
+  </h3>
+
+  <%= render partial: 'shared/context', locals: {:result => item, :props => {} } %>
+</div>
