@@ -2,3 +2,11 @@
     text-transform: uppercase;
     font-family: "Trueno", "Helvetica Neue", Arial, sans-serif;
 }
+
+.infinite-item i.fa-times {
+    display: inline;
+}
+
+.infinite-item i.fa-plus {
+    display: inline;
+}
