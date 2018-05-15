@@ -1,0 +1,4 @@
+en:
+  plugin:
+    request_list:
+      empty_list_message: There are no items in your list. Please use the 'Add to My List' button when viewing records you wish to request and then return here to send the requests. If you have already sent requests, you can view them <a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">here</a>.
