@@ -7,6 +7,22 @@
   <div class="pull-right">
     <%= render partial: 'request_list/action_button', :locals => {:record => @result} %>
   </div>
+
+  <img src style="display:none" onerror="(function(e, obj) {
+  var ir = $(obj).parents('.infinite-record-record');
+  var i = $(obj).parents('.infinite-item');
+  if (ir.prev().length > 0) {
+    var pir = ir.prev();
+    var p = pir.children('.infinite-item');
+    pin = p.attr('class').match(/infinite-item-indent-(\d+)/)[1];
+    if (!isNaN(pin)) {
+      if (parseInt(pin) < parseInt(i.attr('class').match(/infinite-item-indent-(\d+)/)[1])) {
+        p.find('.request_list_action_button').hide();
+      }
+    }
+  }
+})(event, this)
+"/>
 <%# END   request_list changes %>
 
   <div class="information" style="overflow: hidden;">
