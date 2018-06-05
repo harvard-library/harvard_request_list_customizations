@@ -8,6 +8,14 @@
     <%= render partial: 'request_list/action_button', :locals => {:record => @result} %>
   </div>
 
+<%# This is a proof of concept implementation of only showing the button on leaf nodes in the tree
+    img with a blank source is used to generate an error which we catch in order to do our magic!
+    There must be a cleaner way to do this. Other than that quick testing confirms this works nicely.
+    Further testing is required to catch any edge cases or performance impacts.
+
+    It works by checking the indent level of the previous item. If it is lower than the indent of the
+    current item, then the prvious item cannot be a leaf, so we hide the button.
+
   <img src style="display:none" onerror="(function(e, obj) {
   var ir = $(obj).parents('.infinite-record-record');
   var i = $(obj).parents('.infinite-item');
@@ -23,6 +31,8 @@
   }
 })(event, this)
 "/>
+%>
+
 <%# END   request_list changes %>
 
   <div class="information" style="overflow: hidden;">
