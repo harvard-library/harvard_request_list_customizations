@@ -3,3 +3,7 @@ en:
     request_list:
       aeon_button_label: My HOLLIS Special Request Account
       empty_list_message: There are no items in your list. Please use the 'Add to My List' button when viewing records you wish to request and then return here to send the requests. If you have already sent requests, you can view them <a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">here</a>.
+      collection: Found In
+      call_number: Collection Call Number
+      component_id: Item Call Number
+      restrictions: Restrictions
