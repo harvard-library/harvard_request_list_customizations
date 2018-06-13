@@ -111,7 +111,8 @@
 
   <tr>
     <td>
-      <% restrictions = item.record.ext(:access_restrictions) || item.collection.ext(:access_restrictions) %>
+      <% restrictions = item.record.ext(:access_restrictions) %>
+      <% restrictions = item.collection.ext(:access_restrictions) if item.record.ext(:access_restrictions).empty? %>
       <% unless restrictions.empty? %>
         <span class="rl-display-label">
           <%= t('plugin.request_list.restrictions') %>:
