@@ -86,17 +86,6 @@
   </tr>
 
   <tr>
-    <td>
-      <span class="rl-display-label">
-        <%= t('plugin.request_list.repository') %>:
-      </span>
-      <span class="rl-display rl-display-repository">
-        <a href="<%= app_prefix(item.repository.uri) %>">  <%= item.repository.name %></a>
-      </span>
-    </td>
-  </tr>
-
-  <tr>
     <td class="rl-display rl-display-container">
       <div class="rl-display-container-pane">
         <% item.container.multi.map do |container| %>
@@ -106,6 +95,17 @@
           </div>
         <% end %>
       </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <span class="rl-display-label">
+        <%= t('plugin.request_list.repository') %>:
+      </span>
+      <span class="rl-display rl-display-repository">
+        <a href="<%= app_prefix(item.repository.uri) %>">  <%= item.repository.name %></a>
+      </span>
     </td>
   </tr>
 
