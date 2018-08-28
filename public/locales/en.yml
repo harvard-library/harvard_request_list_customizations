@@ -7,28 +7,32 @@ en:
       call_number: Collection Call Number
       component_id: Item Call Number
       restrictions: Restrictions
+      title_message: |
+          You can select items in this list to submit to HOLLIS Special Request for use in
+          the reading room or for photoduplication order processing.<br/>
+          <span style="color:#ff0000">
+            NOTE: Items will remain in your list for this browser session. Items submitted
+            to HOLLIS Special Request will be removed from your list. If you have not yet
+            registered for a HOLLIS Special Request account, you will be prompted to register
+            before your requests can be submitted. If you do not register or login to your
+            account, information about your requests will be lost.
+          </span>
       expanded_help: |
         <p>
-          Use the checkboxes below to select items to request. You may select a request
-          type of reading room, saved, or photoduplication for all the selected requests.
-          Reading room requests will be submitted for retrieval on the date indicated in
-          the schedule retrieval field. Saved requests will be saved in your HOLLIS
-          Special Request account for you to submit for retrieval later. 
+          Use the checkboxes below to select items to request. You may select a request type
+          of reading room, saved, or photoduplication for all the selected requests. Items you
+          request will be available in the reading room on the date you indicate in the
+          "schedule retrieval" field. You can also save your requests in your HOLLIS Special
+          Request account and submit them for viewing at a later date.
         </p>
         <p>
           If you are requesting photoduplication, please indicate the desired format and
-          shipping preference for the reproduction(s). For information on services,
-          shipping options, fees, and refund policy, please consult Imaging Services'
+          shipping preference for the reproduction(s). For information on services, shipping
+          options, fees, and refund policy, please consult Imaging Services'
           <a href="http://library.harvard.edu/preservation/digital-imaging/price-list-for-library-patrons">service details and fee scale</a>
-          for library patrons. Not all repositories allow photoduplication requesting
-          from HOLLIS for Archival Discovery. 
+          for library patrons. Not all repositories allow photoduplication requesting from
+          HOLLIS for Archival Discovery.
         </p>
         <p>
           Some items in your list may be grouped into a single request for processing.
-        </p>
-        <p>
-          If you have not yet registered for a HOLLIS Special Request account, you will be
-          prompted to register before your requests can be submitted. Items submitted to
-          HOLLIS Special Request will be removed from your list. If you do not register or
-          login to your account, information about your requests will be lost.
         </p>
