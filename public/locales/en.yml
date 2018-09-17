@@ -7,6 +7,14 @@ en:
       call_number: Collection Call Number
       component_id: Item Call Number
       restrictions: Restrictions
+      email:
+        from: '"HOLLIS for Archival Discovery" <do_not_reply@hulmail.harvard.edu>'
+        subject: Harvard Library HOLLIS for Archival Discovery List
+        header: |
+          My Request List from
+          <a href="https://hollisarchives.lib.harvard.edu/">HOLLIS for Archival Discovery</a>.
+          Please note that if you would like to view these materials in the library or request
+          reproductions, you should submit your requests to HOLLIS Special Request.
       title_message: |
           You can select items in this list to submit to HOLLIS Special Request for use in
           the reading room or for photoduplication order processing.<br/>
