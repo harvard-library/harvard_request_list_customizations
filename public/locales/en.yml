@@ -25,6 +25,13 @@ en:
             before your requests can be submitted. If you do not register or login to your
             account, information about your requests will be lost.
           </span>
+      print:
+        title: Harvard Library HOLLIS for Archival Discovery List
+        header: |
+          My Request List from
+          <a href="https://hollisarchives.lib.harvard.edu/">HOLLIS for Archival Discovery</a>.
+          Please note that if you would like to view these materials in the library or request
+          reproductions, you should submit your requests to HOLLIS Special Request.
       expanded_help: |
         <p>
           Use the checkboxes below to select items to request. You may select a request type
