@@ -30,3 +30,11 @@
 .rl-display-spanner {
   padding-left: 2px !important;
 }
+
+.hvd_hollis-login-link {
+  text-decoration: underline;
+}
+
+.hvd_heading3 {
+  font-family: "Lora", Arial, sans-serif;
+}
