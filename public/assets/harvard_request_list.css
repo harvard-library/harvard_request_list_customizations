@@ -31,10 +31,23 @@
   padding-left: 2px !important;
 }
 
+.rl-ha-expand-help {
+  margin-left: 40px;
+  padding-right: 20px;
+  font-family: "Trueno", "Helvetica Neue", Arial, sans-serif;
+}
+
+
 .hvd_hollis-login-link {
   text-decoration: underline;
 }
 
-.hvd_heading3 {
-  font-family: "Lora", Arial, sans-serif;
+li.expanded_help_list_item:before {
+content: '-';
+margin-left: -15px;
+margin-right: 10px;
+}
+
+li.expanded_help_list_item {
+  list-style-type: none;
 }

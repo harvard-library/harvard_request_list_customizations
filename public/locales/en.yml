@@ -4,6 +4,8 @@ en:
       aeon_button_label: My HOLLIS Special Request Account
       empty_list_message: To add items to this list use "Add to My List" when viewing materials you want to request. Return to this screen to submit requests. <br><br> <b>Need to manage existing requests?</b> Log in to <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
       collection: Found In
+      expand_help_label: Show more
+      collapse_help_label: Show less
       call_number: Collection Call Number
       component_id: Item Call Number
       restrictions: Restrictions
@@ -16,15 +18,11 @@ en:
           Please note that if you would like to view these materials in the library or request
           reproductions, you should submit your requests to HOLLIS Special Request.
       title_message: |
-          You can select items in this list to submit to HOLLIS Special Request for use in
-          the reading room or for photoduplication order processing.<br/>
-          <span style="color:#ff0000">
-            NOTE: Items will remain in your list for this browser session. Items submitted
-            to HOLLIS Special Request will be removed from your list. If you have not yet
-            registered for a HOLLIS Special Request account, you will be prompted to register
-            before your requests can be submitted. If you do not register or login to your
-            account, information about your requests will be lost.
-          </span>
+        <p class="serif">
+          Review items and use the form below to submit your requests to 
+          <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
+          HOLLIS Special Request is a separate system where you can manage the requests you've placed from special collections and archives.
+        </p>
       print:
         title: Harvard Library HOLLIS for Archival Discovery List
         header: |
@@ -32,22 +30,8 @@ en:
           <a href="https://hollisarchives.lib.harvard.edu/">HOLLIS for Archival Discovery</a>.
           Please note that if you would like to view these materials in the library or request
           reproductions, you should submit your requests to HOLLIS Special Request.
-      expanded_help: |
-        <p>
-          Use the checkboxes below to select items to request. You may select a request type
-          of reading room, saved, or photoduplication for all the selected requests. Items you
-          request will be available in the reading room on the date you indicate in the
-          "schedule retrieval" field. You can also save your requests in your HOLLIS Special
-          Request account and submit them for viewing at a later date.
-        </p>
-        <p>
-          If you are requesting photoduplication, please indicate the desired format and
-          shipping preference for the reproduction(s). For information on services, shipping
-          options, fees, and refund policy, please consult Imaging Services'
-          <a href="https://library.harvard.edu/services-tools/reproductions">service details and fee scale</a>
-          for library patrons. Not all repositories allow photoduplication requesting from
-          HOLLIS for Archival Discovery.
-        </p>
-        <p>
-          Some items in your list may be grouped into a single request for processing.
-        </p>
+      expanded_help_title: Important Information
+      expanded_help_elements:
+          - Items will only remain in this list for the duration of your browser session.
+          - Requests for materials held off-site require at least one business day to process.
+          - Some items may be grouped as a single request in HOLLIS Special Request.
