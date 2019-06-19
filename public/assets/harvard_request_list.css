@@ -32,11 +32,26 @@
 }
 
 .rl-ha-expand-help {
-  margin-left: 40px;
-  padding-right: 20px;
+  margin-left: 0px;
+  text-transform: uppercase;
   font-family: "Trueno", "Helvetica Neue", Arial, sans-serif;
 }
 
+.rl-ha-expanded-help {
+  text-align: left;
+  margin: 10px 100px 10px 0px;
+}
+
+.rl-ha-collapsed-help {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.rl-message-title {
+  width: 70%;
+  font-size: 120%;
+  margin-bottom: 0px;
+}
 
 .hvd_hollis-login-link {
   text-decoration: underline;
@@ -50,4 +65,5 @@ margin-right: 10px;
 
 li.expanded_help_list_item {
   list-style-type: none;
+  display: flex;
 }
