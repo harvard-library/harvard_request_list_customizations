@@ -2,6 +2,7 @@ en:
   plugin:
     request_list:
       aeon_button_label: My HOLLIS Special Request Account
+      request_form_subtitle: SUBMIT REQUEST
       empty_list_message: To add items to this list use "Add to My List" when viewing materials you want to request. Return to this screen to submit requests. <br><br> <b>Need to manage existing requests?</b> Log in to <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
       collection: Found In
       expand_help_label: Show more
@@ -9,6 +10,10 @@ en:
       call_number: Collection Call Number
       component_id: Item Call Number
       restrictions: Restrictions
+      sent_items_message: |
+       You submitted requests for %{sent} items. Your list has been sent to 
+       <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
+       To check the status of your request, log in to your HOLLIS Special Request account.
       email:
         from: '"HOLLIS for Archival Discovery" <do_not_reply@hulmail.harvard.edu>'
         subject: Harvard Library HOLLIS for Archival Discovery List
@@ -35,3 +40,18 @@ en:
           - Items will only remain in this list for the duration of your browser session.
           - Requests for materials held off-site require at least one business day to process.
           - Some items may be grouped as a single request in HOLLIS Special Request.
+      options:
+        request_type: Type of request
+        date: Schedule Retrieval
+        date_help: Click to bring up a calendar and indicate the date you plan to visit. If material is stored off-site please allow at least 1 business day for retrieval.
+        notes: Notes or question
+        notes_help: Enter any notes about this request for your personal reference.
+        questions: Special Requests/Questions?
+        questions_help: Please enter any special requests or questions for library staff (up to 255 characters).
+        format: Desired Format
+        delivery: Shipping Preference
+        for_publication: For Publication?
+        for_publication_yes: Yes, intended for publication
+        for_publication_no: No, not intended for publication
+        photoduplication_instructions: Photoduplication Instructions
+        photoduplication_instructions_help: Let us know exactly what you would like reproduced. Specific page numbers, special instructions, and questions should all be entered here (up to 255 characters).
