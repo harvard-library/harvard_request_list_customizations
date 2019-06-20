@@ -1,0 +1,18 @@
+<section  id="header">
+<div class="row" id="logo">
+  <div class="h1__left"><% unless request.original_fullpath == '/' %>
+  	<div class="hvd_brand_title">
+        <a class="hvd_header_title_link" title="<%=t('brand.title_link_text') %>" href="<%= AppConfig[:public_proxy_url] %>"><% end %> <%= t('brand.title').html_safe %><% unless request.original_fullpath == '/' %></a><% end %>
+    </div>
+  </div>
+  <div class="h1__right"><a href="<%= t('brand.logo_link') %>" 
+     title="<%= t('brand.logo_link_title') %>">
+     <div class="hvd_brand_logo">
+     	<img alt="<%= t('brand.logo_alt') %>" src="/assets/hl_logo.svg"/></img>
+     </div>
+  </div>
+</div>
+<div class="row" id="pui_brand">
+  <div class="col-sm-8 nav-row"><%= render partial: 'shared/head_nav' %></div>
+</div>
+</section>
