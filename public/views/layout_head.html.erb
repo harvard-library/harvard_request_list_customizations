@@ -1,1 +1,39 @@
 <link href="<%= "/assets/harvard_request_list.css" %>" media="all" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+	//source: https://stackoverflow.com/questions/641857/javascript-window-resize-event
+	let addEvent = function(object, type, callback) {
+	    if (object == null || typeof(object) == 'undefined') return;
+	    if (object.addEventListener) {
+	        object.addEventListener(type, callback, false);
+	    } else if (object.attachEvent) {
+	        object.attachEvent("on" + type, callback);
+	    } else {
+	        object["on"+type] = callback;
+	    }
+	};
+
+	let triggerElementDisplayByWindowSize = function(event){
+		let showMoreButton = document.getElementsByClassName('rl-ha-expand-help');
+		let expandedHelpDiv = document.getElementsByClassName('rl-ha-expanded-help');
+		let itemList = document.getElementsByClassName('col-sm-12 no-pad');
+		let itemListHeader = document.getElementsByClassName('rl-item-list-header');
+
+		let blockRHSnoneLHS = function(rhs, lhs){
+			if(rhs.length > 0 && lhs.length > 0){
+				rhs[0].style.display = "block";
+				lhs[0].style.display = "none";
+			}
+		}
+		if(window.innerWidth > 600){
+			blockRHSnoneLHS(itemList, itemListHeader);
+			blockRHSnoneLHS(expandedHelpDiv, showMoreButton);
+		}else{
+			blockRHSnoneLHS(itemListHeader, itemList);
+			blockRHSnoneLHS(showMoreButton, expandedHelpDiv);
+		}
+	}
+
+	window.onresize = triggerElementDisplayByWindowSize;
+	// this should trigger the function on the page loading. 
+	$(document).ready(triggerElementDisplayByWindowSize);
+</script>
