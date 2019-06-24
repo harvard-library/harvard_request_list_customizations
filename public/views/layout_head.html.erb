@@ -1,17 +1,5 @@
 <link href="<%= "/assets/harvard_request_list.css" %>" media="all" rel="stylesheet" type="text/css">
 <script type="text/javascript">
-	//source: https://stackoverflow.com/questions/641857/javascript-window-resize-event
-	let addEvent = function(object, type, callback) {
-	    if (object == null || typeof(object) == 'undefined') return;
-	    if (object.addEventListener) {
-	        object.addEventListener(type, callback, false);
-	    } else if (object.attachEvent) {
-	        object.attachEvent("on" + type, callback);
-	    } else {
-	        object["on"+type] = callback;
-	    }
-	};
-
 	let triggerElementDisplayByWindowSize = function(event){
 		let showMoreButton = document.getElementsByClassName('rl-ha-expand-help');
 		let expandedHelpDiv = document.getElementsByClassName('rl-ha-expanded-help');
@@ -36,4 +24,25 @@
 	window.onresize = triggerElementDisplayByWindowSize;
 	// this should trigger the function on the page loading. 
 	$(document).ready(triggerElementDisplayByWindowSize);
+
+	//$(".rl-item-list-header-custom").click();
+
+	var isCarretRotated = false;
+
+	let triggerRequestListBox = function(){
+		// this part trigger apparition/disparition of the item list according to its current statue
+		let theBox = document.getElementsByClassName("request-list-item-default");
+		if(theBox.length >0){
+			let newDisplayStyle = (theBox[0].style.display == "none"? "block":"none");
+			theBox[0].style.display = newDisplayStyle;
+		}
+
+		//this part mirror vertically the carret according to the previous state.
+		let theCarret = document.getElementsByClassName("rl-item-list-caret");
+		if(theCarret.length>0){
+			let rotationDeg = isCarretRotated?0:180;
+			theCarret[0].style.transform = 'rotate('+rotationDeg+'deg)';
+			isCarretRotated = !isCarretRotated;
+		}
+	};
 </script>

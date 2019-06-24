@@ -11,12 +11,17 @@ en:
       collapse_help_label: Show less
       call_number: Collection Call Number
       component_id: Item Call Number
+      item_list_subtitle: List of items
       restrictions: Restrictions
       sent_items_message: |
        You submitted requests for %{sent} items. Your list has been sent to 
        <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
        To check the status of your request, log in to your HOLLIS Special Request account.
       email:
+        list_button_label: Email List
+        send_button_label: Send Email
+        sent_message: Your list has been sent to %{email}.
+        error_message: Your list was not sent. Please provide a validate email address.
         from: '"HOLLIS for Archival Discovery" <do_not_reply@hulmail.harvard.edu>'
         subject: Harvard Library HOLLIS for Archival Discovery List
         header: |
