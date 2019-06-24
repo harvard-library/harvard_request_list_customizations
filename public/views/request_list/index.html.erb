@@ -39,8 +39,6 @@
     <div class="row">
       <div class="col-sm-12 no-pad request-list-item-default">
         <div class="rl-extra-button-pane col-sm-6 no-pad">
-          <div class="pull-right">
-
             <a class="btn btn-default page_action rl-extra-button"
                href="<%= url_for(:controller => :request_list, :action => :pdf) %>">
               <i id="rl-print-list-button" class="fa fa-file-pdf-o"></i>
@@ -53,8 +51,6 @@
                 <%= t('plugin.request_list.email.list_button_label') %>
               </a>
             <% end %>
-
-          </div>
         </div>
         <div class="btn-group rl-select-buttons pull-left">
 
@@ -134,7 +130,7 @@
 
 </div>
 
-<div class="row">
+<div class="row" style="width: 83.333333%">
   <div>
     <%= render partial: "request_list/#{handler.profile}/form_footer", locals: {:form => f, :handler => handler} %>
   </div>

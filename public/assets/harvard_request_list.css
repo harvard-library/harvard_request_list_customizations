@@ -146,6 +146,19 @@ a.hvd_header_title_link {
   font-size: 15px;
 }
 
+.rl-extra-button-pane {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.rl-extra-button {
+  float: right;
+}
+
+.rl-ha-publication-checkbox {
+  float: right;
+}
+
 .rl-item-list-caret{
   float: right;
   margin-right: 10px;
@@ -160,6 +173,39 @@ a.hvd_header_title_link {
   text-transform: uppercase;
   font-family: "Trueno", "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
+}
+
+.col-sm-3 {
+  width: 100%;
+  min-height: 30px;
+  overflow: hidden;
+}
+
+.col-sm-2 {
+  width: 100%;
+}
+
+.col-sm-4 {
+  width:100%;
+}
+
+.rl-datepicker {
+  width: 65%;
+  float: right;
+}
+
+.rl-ha-list-input {
+  width: 65%;
+  float: right;
+}
+
+.rl-ha-notes-and-questions{
+  width:100%;
+}
+
+.type-request-select-box{
+  float: right;
+  width: 65%;
 }
 
 .col-sm-12, .no-pad{

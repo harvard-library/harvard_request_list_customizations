@@ -59,8 +59,8 @@ en:
         questions_help: Please enter any special requests or questions for library staff (up to 255 characters).
         format: Select format
         delivery: Pickup or delivery
-        for_publication: For Publication?
-        for_publication_yes: Yes, intended for publication
+        for_publication: Will this item be used in a publication?
+        for_publication_yes: Yes, this item will be used in publication
         for_publication_no: No, not intended for publication
         photoduplication_instructions: Photoduplication Instructions
         photoduplication_instructions_help: Let us know exactly what you would like reproduced. Specific page numbers, special instructions, and questions should all be entered here (up to 255 characters).

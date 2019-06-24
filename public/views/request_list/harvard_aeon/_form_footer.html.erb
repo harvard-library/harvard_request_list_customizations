@@ -11,7 +11,7 @@
   <div class="col-sm-3">
     <div class="form-group rl-ha-type-select">
       <label class="control-label"><%= t('plugin.request_list.options.request_type') %></label>
-      <div class="">
+      <div class="type-request-select-box">
         <select name="request_type" id="request_type_select" class="form-control">
           <% handler.list_opts[:request_types].each do |type, values| %>
             <option value="<%= ASUtils.to_json(values) %>"><%= type %></option>
@@ -52,29 +52,31 @@
     <div class="rl-ha-options-form" id="rl-photoduplication-options-form" data-request-type="photoduplication">
       <div class="form-group col-sm-3">
         <label class="control-label" title="Required"><%= t('plugin.request_list.options.format') %> *</label>
-        <select name="Format" class="form-control rl-ha-list-input required">
-          <option value="">...</option>
-          <% handler.list_opts[:format_options].each do |option| %>
-            <option value="<%= option %>"><%= option %></option>
-          <% end %>
-        </select>
+	        <select name="Format" class="form-control rl-ha-list-input required">
+	          <option value="">...</option>
+	          <% handler.list_opts[:format_options].each do |option| %>
+	            <option value="<%= option %>"><%= option %></option>
+	          <% end %>
+	        </select>
       </div>
 
       <div class="form-group col-sm-3">
         <label class="control-label" title="Required"><%= t('plugin.request_list.options.delivery') %> *</label>
-        <select name="ShippingOption" class="form-control rl-ha-list-input required">
-          <option value="">...</option>
-          <% handler.list_opts[:delivery_options].each do |option| %>
-            <option value="<%= option %>"><%= option %></option>
-          <% end %>
-        </select>
+	        <select name="ShippingOption" class="form-control rl-ha-list-input required">
+	          <option value="">...</option>
+	          <% handler.list_opts[:delivery_options].each do |option| %>
+	            <option value="<%= option %>"><%= option %></option>
+	          <% end %>
+	        </select>
       </div>
 
       <div class="form-group col-sm-2" style="padding-top: 20px">
         <label class="control-label" style="display:inline"><%= t('plugin.request_list.options.for_publication') %></label>
         &nbsp;
-        <input type="checkbox" name="ForPublication" class="rl-ha-list-input" style="display:inline" value="Yes"/>
-        <span class="yes_for_publication"><%= t('plugin.request_list.options.for_publication_yes')%></span>
+        <div class="rl-ha-publication-checkbox">
+	        <input type="checkbox" name="ForPublication" class="rl-ha-list-input" style="display:inline" value="Yes"/>
+	        <span class="yes_for_publication"><%= t('plugin.request_list.options.for_publication_yes')%></span>
+	    </div>
       </div>
     </div>
   </div>
