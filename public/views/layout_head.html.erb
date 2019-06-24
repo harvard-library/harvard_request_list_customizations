@@ -15,6 +15,7 @@
 		if(window.innerWidth > 600){
 			blockRHSnoneLHS(itemList, itemListHeader);
 			blockRHSnoneLHS(expandedHelpDiv, showMoreButton);
+			carretBasePosition();
 		}else{
 			blockRHSnoneLHS(itemListHeader, itemList);
 			blockRHSnoneLHS(showMoreButton, expandedHelpDiv);
@@ -25,9 +26,17 @@
 	// this should trigger the function on the page loading. 
 	$(document).ready(triggerElementDisplayByWindowSize);
 
-	//$(".rl-item-list-header-custom").click();
-
 	var isCarretRotated = false;
+
+
+	// so that the carret go back to its base position when the window get stretched in the width.
+	let carretBasePosition = function(){
+		let theCarret = document.getElementsByClassName("rl-item-list-caret");
+		if(theCarret.length>0){
+			theCarret[0].style.transform = 'rotate(0deg)';
+			isCarretRotated = false;
+		}
+	}
 
 	let triggerRequestListBox = function(){
 		// this part trigger apparition/disparition of the item list according to its current statue

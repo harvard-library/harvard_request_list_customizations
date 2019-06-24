@@ -74,6 +74,7 @@
         <label class="control-label" style="display:inline"><%= t('plugin.request_list.options.for_publication') %></label>
         &nbsp;
         <input type="checkbox" name="ForPublication" class="rl-ha-list-input" style="display:inline" value="Yes"/>
+        <span class="yes_for_publication"><%= t('plugin.request_list.options.for_publication_yes')%></span>
       </div>
     </div>
   </div>
@@ -94,29 +95,11 @@
     </div>
   </div>
 
-  <div class="form-group rl-ha-notes-and-questions col-sm-5">
-    <div class="form-group">
-      <label class="control-label rl-ha-questions-label"
-             data-photoduplication-label="<%= t('plugin.request_list.options.photoduplication_instructions') %>"
-             data-other-label="<%= t('plugin.request_list.options.questions') %>">
-        <%= t('plugin.request_list.options.questions') %>
-      </label>
-      <textarea name="SpecialRequest"
-                rows="3"
-                class="form-control rl-ha-list-input rl-ha-questions-input"
-                title="<%= t('plugin.request_list.options.questions_help') %>"
-                data-photoduplication-help="<%= t('plugin.request_list.options.photoduplication_instructions_help') %>"
-                data-other-help="<%= t('plugin.request_list.options.questions_help') %>"
-                maxlength="255"></textarea>
-    </div>
-  </div>
-</div>
-
 <div class="row">
   <div class="col-sm-8"></div>
   <div class="col-sm-2">
     <div class="pull-right" style="padding-top:20px">
-      <button type="submit" class="btn btn-primary submit-requests"><%= t('plugin.request_list.submit_button_label') %></button>
+      <button type="submit" class="btn btn-secondary submit-requests"><%= t('plugin.request_list.submit_button_label') %></button>
     </div>
   </div>
 </div>

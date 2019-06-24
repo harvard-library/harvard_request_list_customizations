@@ -153,6 +153,15 @@ a.hvd_header_title_link {
   transform: rotate(0deg);
 }
 
+.btn-secondary{
+  background-color: #0579b8;
+  border-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Trueno", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+}
+
 .col-sm-12, .no-pad{
   display: block;
 }

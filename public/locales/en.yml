@@ -13,6 +13,7 @@ en:
       component_id: Item Call Number
       item_list_subtitle: List of items
       restrictions: Restrictions
+      submit_button_label: Submit
       sent_items_message: |
        You submitted requests for %{sent} items. Your list has been sent to 
        <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
@@ -49,14 +50,15 @@ en:
           - Some items may be grouped as a single request in HOLLIS Special Request.
       options:
         request_type: Type of request
-        date: Schedule Retrieval
+        date: Select date of visit
+        date_hover_message: Use the calendar to pick the date of your visit. Please note hours vary and some locations require appointments.
         date_help: Click to bring up a calendar and indicate the date you plan to visit. If material is stored off-site please allow at least 1 business day for retrieval.
         notes: Notes or question
         notes_help: Enter any notes about this request for your personal reference.
         questions: Special Requests/Questions?
         questions_help: Please enter any special requests or questions for library staff (up to 255 characters).
-        format: Desired Format
-        delivery: Shipping Preference
+        format: Select format
+        delivery: Pickup or delivery
         for_publication: For Publication?
         for_publication_yes: Yes, intended for publication
         for_publication_no: No, not intended for publication
