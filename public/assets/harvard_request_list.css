@@ -1,14 +1,9 @@
-.rl-ha-type-select {
-    font-family: "Trueno", "Helvetica Neue", Arial, sans-serif;
-}
-
 .archival-discovery {
   font-family: "Lora", Georgia, Cambria, "Times New Roman", Times, serif;
   font-size: 24px;
   font-style: italic;
   font-weight: 400;
 }
-
 
 #header > .row {
   display: flex;
@@ -47,7 +42,6 @@ a.hvd_header_title_link {
   width:25%;
 }
 
-
 .hvd_brand_logo {
     height: 50px;
     -o-object-fit: contain;
@@ -62,8 +56,6 @@ a.hvd_header_title_link {
     position: relative;
     transform: translate(0, -50%);
 }
-
-
 
 .infinite-item i.fa-times {
     display: inline;
@@ -80,6 +72,10 @@ a.hvd_header_title_link {
   padding: 0px 6px 0px 0px;
 }
 
+
+span.yes_for_publicatioin {
+  width: 90%;
+}
 
 .rl-request-form-header {
     font-size: 120%;
@@ -98,6 +94,13 @@ a.hvd_header_title_link {
 .form-group {
   margin-bottom: 4px;
   float:none;
+}
+
+
+.rl-ha-list-input-checkbox {
+  float: left; 
+  width: 10%; 
+  display:inline;
 }
 
 .rl-display-container-cell {
@@ -156,7 +159,8 @@ a.hvd_header_title_link {
 }
 
 .rl-ha-publication-checkbox {
-  float: right;
+  display: inline-table;
+  width: 300px;
 }
 
 .rl-item-list-caret{
@@ -189,6 +193,10 @@ a.hvd_header_title_link {
   width:100%;
 }
 
+.col-sm-10{
+  width: 100%;
+}
+
 .rl-datepicker {
   width: 65%;
   float: right;
@@ -213,7 +221,7 @@ a.hvd_header_title_link {
 }
 
 .rl-message-title {
-  width: 70%;
+  width: 100%;
   font-size: 120%;
   margin-bottom: 0px;
 }

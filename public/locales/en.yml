@@ -52,7 +52,7 @@ en:
         request_type: Type of request
         date: Select date of visit
         date_hover_message: Use the calendar to pick the date of your visit. Please note hours vary and some locations require appointments.
-        date_help: Click to bring up a calendar and indicate the date you plan to visit. If material is stored off-site please allow at least 1 business day for retrieval.
+        date_help: Use the calendar to pick the date of your visit. Please note hours vary and some locations require appointments.
         notes: Notes or question
         notes_help: Enter any notes about this request for your personal reference.
         questions: Special Requests/Questions?
