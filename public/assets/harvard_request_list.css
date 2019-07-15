@@ -230,6 +230,13 @@ span.yes_for_publicatioin {
   text-decoration: underline;
 }
 
+.sumbmit-button-panel {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
 li.expanded_help_list_item:before {
 content: '-';
 margin-left: -15px;
