@@ -151,7 +151,7 @@ span.yes_for_publicatioin {
 
 .rl-extra-button-pane {
   width: 100%;
-  padding-bottom: 20px;
+  display: inline-block; /*This prevents the content size to get squished when resizing horizontally*/
 }
 
 .rl-extra-button {
