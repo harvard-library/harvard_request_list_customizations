@@ -38,7 +38,7 @@ $(function() {
     }
     $('.rl-ha-options-form').hide();
     $('.rl-ha-item-form').hide();
-    if (selected.text == 'Reading room' || selected.text == 'View in Library') {
+    if (selected.text == 'Reading room' || selected.text == 'View in library') {
       $("#rl-readingroom-options-form").show();
       $(".rl-ha-additional-fields").slideDown();
       $('.rl-ha-questions-label').html($('.rl-ha-questions-label').data('other-label'));
@@ -48,7 +48,7 @@ $(function() {
       $(".rl-ha-additional-fields").slideDown();
       $('.rl-ha-questions-label').html($('.rl-ha-questions-label').data('other-label'));
       $('.rl-ha-questions-input').attr('title', $('.rl-ha-questions-input').data('other-help'));
-    } else if (selected.text == 'Photoduplication' || selected.text == 'Request Copies') {
+    } else if (selected.text == 'Photoduplication' || selected.text == 'Request copies') {
       $("#rl-photoduplication-options-form").show();
       $(".rl-ha-additional-fields").slideDown();
       $('.rl-ha-questions-label').html($('.rl-ha-questions-label').data('photoduplication-label'));

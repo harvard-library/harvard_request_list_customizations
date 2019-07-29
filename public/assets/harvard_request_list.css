@@ -1,9 +1,5 @@
-.nav-row {
-  float: left;
-  width: 100%;
-}
-
 .rl-ha-type-select {
+    display: flex;
     font-family: "Trueno", "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -129,21 +125,27 @@ span.yes_for_publicatioin {
   font-size: 15px;
 }
 
-.col-sm-3 {
+.form-group.col-sm-3 {
   width: 100%;
   min-height: 30px;
+  display: flex;
   overflow: hidden;
 }
 
-.col-sm-2 {
+.form-group.col-sm-2 {
   width: 100%;
 }
 
-.col-sm-4 {
-  width:100%;
+.submit-button-panel.col-sm-2 {
+  width: 100%;
 }
 
-.col-sm-10{
+.form-group.col-sm-4 {
+  width:100%;
+  display: flex;
+}
+
+.no-pad.col-sm-10, .rl-main-content.col-sm-10{
   width: 100%;
 }
 
@@ -163,8 +165,9 @@ span.yes_for_publicatioin {
 
 .type-request-select-box{
   float: right;
-  width: 65%;
+  width: 100%;
 }
+
 
 .col-sm-12, .no-pad{
   display: block;
@@ -180,7 +183,7 @@ span.yes_for_publicatioin {
   text-decoration: underline;
 }
 
-.sumbmit-button-panel {
+.submit-button-panel {
   display: inline-block;
   padding-top: 10px;
   padding-bottom: 10px;

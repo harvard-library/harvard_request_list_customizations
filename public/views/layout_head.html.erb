@@ -12,7 +12,8 @@
 				lhs[0].style.display = "none";
 			}
 		}
-		if(window.innerWidth > 700){
+		//786 pix chosen to be consistent with aspace-hvd-pui
+		if(window.innerWidth >= 768){
 			blockRHSnoneLHS(itemList, itemListHeader);
 			blockRHSnoneLHS(expandedHelpDiv, showMoreButton);
 			carretBasePosition();
