@@ -97,9 +97,6 @@ span.yes_for_publicatioin {
   float: right;
 }
 
-
-
-
 .rl-ha-publication-checkbox {
   display: flex;
 }
@@ -127,16 +124,39 @@ span.yes_for_publicatioin {
   overflow: hidden;
 }
 
+.back-to-top-button-container{
+  display: none;
+  float: right;
+}
+
+
+
+
+/*this part is applied when the screen is resized above 767px of width*/
 @media only screen and (min-width: 767px) {
   .form-group.col-sm-2 {
     width: 100%;
     display: flex;
+  }
+  .rl-item-list-header.rl-item-list-header-custom {
+    display: none;  
+  }
+
+  .col-sm-12.no-pad.request-list-item-default {
+    display: block;  
   }
 }
 
 @media only screen and (max-width: 767px) {
   .rl-ha-publication-checkbox {
     margin-left: 10px
+  }
+  .rl-item-list-header.rl-item-list-header-custom {
+    display: block;  
+  }
+
+  .col-sm-12.no-pad.request-list-item-default {
+    display: none;  
   }
 }
 

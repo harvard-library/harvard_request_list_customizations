@@ -12,14 +12,15 @@
 				lhs[0].style.display = "none";
 			}
 		}
-		//786 pix chosen to be consistent with aspace-hvd-pui
+		//786 pix chosen to be consistent with aspace-hvd-pui css changes.
 		if(window.innerWidth >= 768){
 			blockRHSnoneLHS(itemList, itemListHeader);
 			blockRHSnoneLHS(expandedHelpDiv, showMoreButton);
 			carretBasePosition();
-		}else{
-			blockRHSnoneLHS(itemListHeader, itemList);
-			blockRHSnoneLHS(showMoreButton, expandedHelpDiv);
+			let backToTopContainer = document.getElementsByClassName('back-to-top-button-container');
+			if(backToTopContainer.length > 0){
+				backToTopContainer[0].style.display = "none";
+			}
 		}
 	}
 
@@ -27,32 +28,32 @@
 	// this should trigger the function on the page loading. 
 	$(document).ready(triggerElementDisplayByWindowSize);
 
-	var isCarretRotated = false;
-
 
 	// so that the carret go back to its base position when the window get stretched in the width.
 	let carretBasePosition = function(){
 		let theCarret = document.getElementsByClassName("rl-item-list-caret");
 		if(theCarret.length>0){
 			theCarret[0].style.transform = 'rotate(0deg)';
-			isCarretRotated = false;
 		}
 	}
 
 	let triggerRequestListBox = function(){
 		// this part trigger apparition/disparition of the item list according to its current statue
 		let theBox = document.getElementsByClassName("request-list-item-default");
+		let backToTopContainer = document.getElementsByClassName('back-to-top-button-container');
 		if(theBox.length >0){
 			let newDisplayStyle = (theBox[0].style.display == "none"? "block":"none");
 			theBox[0].style.display = newDisplayStyle;
+			if(backToTopContainer.length > 0){
+				backToTopContainer[0].style.display = newDisplayStyle;
+			}
 		}
 
-		//this part mirror vertically the carret according to the previous state.
+		//this part mirror vertically the carret according to the item list's state.
 		let theCarret = document.getElementsByClassName("rl-item-list-caret");
 		if(theCarret.length>0){
-			let rotationDeg = isCarretRotated?0:180;
+			let rotationDeg = theBox[0].style.display == "none"?0:180;
 			theCarret[0].style.transform = 'rotate('+rotationDeg+'deg)';
-			isCarretRotated = !isCarretRotated;
 		}
 	};
 </script>

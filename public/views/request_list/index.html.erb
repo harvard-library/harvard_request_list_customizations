@@ -127,10 +127,16 @@
       <%= render partial: "request_list/#{handler.profile}/form_right", locals: {:form => f, :handler => handler} %>
     </div>
   </div>
-
 </div>
 
-<div class="row" style="width: 83.333333%">
+<div class="back-to-top-button-container">
+  <a class="btn btn-default page_action" onclick="window.scrollTo(0,0);" title="<%= t('plugin.request_list.back_to_top_button_label') %>">
+    <i class="fa fa-angle-up"></i>
+    <%= t('plugin.request_list.back_to_top_button_label').html_safe %>
+  </a>
+</div>
+
+<div class="row">
   <div>
     <%= render partial: "request_list/#{handler.profile}/form_footer", locals: {:form => f, :handler => handler} %>
   </div>
