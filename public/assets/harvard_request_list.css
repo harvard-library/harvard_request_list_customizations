@@ -20,7 +20,7 @@
 
 
 span.yes_for_publicatioin {
-  width: 90%;
+  width: 100%;
 }
 
 .rl-request-form-header {
@@ -40,13 +40,6 @@ span.yes_for_publicatioin {
 .form-group {
   margin-bottom: 4px;
   float:none;
-}
-
-
-.rl-ha-list-input-checkbox {
-  float: left; 
-  width: 10%; 
-  display:inline;
 }
 
 .rl-display-container-cell {
@@ -104,9 +97,11 @@ span.yes_for_publicatioin {
   float: right;
 }
 
+
+
+
 .rl-ha-publication-checkbox {
-  display: inline-table;
-  width: 300px;
+  display: flex;
 }
 
 .rl-item-list-caret{
@@ -132,8 +127,17 @@ span.yes_for_publicatioin {
   overflow: hidden;
 }
 
-.form-group.col-sm-2 {
-  width: 100%;
+@media only screen and (min-width: 767px) {
+  .form-group.col-sm-2 {
+    width: 100%;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .rl-ha-publication-checkbox {
+    margin-left: 10px
+  }
 }
 
 .submit-button-panel.col-sm-2 {
@@ -154,9 +158,10 @@ span.yes_for_publicatioin {
   float: right;
 }
 
-.rl-ha-list-input {
-  width: 65%;
+.rl-ha-list-input.rl-ha-list-input-checkbox {
   float: right;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .rl-ha-notes-and-questions{
