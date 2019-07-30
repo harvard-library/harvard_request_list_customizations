@@ -21,6 +21,13 @@
 			if(backToTopContainer.length > 0){
 				backToTopContainer[0].style.display = "none";
 			}
+		}else{
+			if (itemListHeader.length > 0 && itemListHeader[0].style.display != "block"){
+				blockRHSnoneLHS(itemListHeader, itemList);
+			}
+			if (showMoreButton.length > 0 && showMoreButton[0].style.display != "block"){
+				blockRHSnoneLHS(showMoreButton, expandedHelpDiv);	
+			}
 		}
 	}
 
