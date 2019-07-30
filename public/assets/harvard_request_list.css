@@ -19,9 +19,17 @@
 }
 
 
-span.yes_for_publicatioin {
-  width: 100%;
+.photoduplication-label, .option-delivery-label, .type-request-label, .date-options-label {
+  width: 200px !important;
 }
+
+.form-control {
+  width: 350px;
+}
+
+/*span.yes_for_publication {
+  width: 100%;
+}*/
 
 .rl-request-form-header {
     font-size: 120%;
@@ -144,11 +152,6 @@ span.yes_for_publicatioin {
 
 .rl-ha-notes-and-questions{
   width:100%;
-}
-
-.type-request-select-box{
-  float: right;
-  width: 100%;
 }
 
 
