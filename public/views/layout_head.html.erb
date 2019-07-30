@@ -13,46 +13,43 @@
 			}
 		}
 
-		let triggerVerticalDisplay = function(){
+		let triggerHorizontalDisplay = function(){ triggerSelectSortDisplay('-vertical', '', 'block')
+		};
+
+		let triggerVerticalDisplay = function(){ triggerSelectSortDisplay('', '-vertical', 'none')
+		};
+
+		let triggerSelectSortDisplay = function(toRemove, toAdd, baseSubgroupDisplayStyle){
 			let selectDiv = document.getElementById("rl-select-buttons-subgroup");
 			let sortDiv = document.getElementById("rl-sort-buttons-subgroup");
 
-			selectDiv.classList.remove('btn-group');
-			selectDiv.classList.add('btn-group-vertical');
+			selectDiv.classList.remove('btn-group'+toRemove);
+			selectDiv.classList.add('btn-group'+toAdd);
 
-			sortDiv.classList.remove('btn-group');
-			sortDiv.classList.add('btn-group-vertical');
+			sortDiv.classList.remove('btn-group'+toRemove);
+			sortDiv.classList.add('btn-group'+toAdd);
 
-		}
+			//to have consistent none/block disposition at resizing and on load. 
+			selectDiv.style.display = baseSubgroupDisplayStyle;
+			sortDiv.style.display = baseSubgroupDisplayStyle;
+		}		
 
 
-		let triggerHorizontalDisplay = function(){
-			let selectDiv = document.getElementById("rl-select-buttons-subgroup");
-			let sortDiv = document.getElementById("rl-sort-buttons-subgroup");
-
-			selectDiv.classList.remove('btn-group-vertical');
-			selectDiv.classList.add('btn-group');
-
-			sortDiv.classList.remove('btn-group-vertical');
-			sortDiv.classList.add('btn-group');
-		}
-		//786 pix chosen to be consistent with aspace-hvd-pui css changes.
+		//768 pix chosen to be consistent with aspace-hvd-pui css changes.
 		if(window.innerWidth >= 768){
-
 
 			triggerHorizontalDisplay();
 			blockRHSnoneLHS(itemList, itemListHeader);
 			blockRHSnoneLHS(expandedHelpDiv, showMoreButton);
-			carretBasePosition();
+			carretBasePosition("rl-item-list-caret");
+			carretBasePosition("rl-select-caret");
+			carretBasePosition("rl-sort-caret");
 			let backToTopContainer = document.getElementsByClassName('back-to-top-button-container');
 			if(backToTopContainer.length > 0){
 				backToTopContainer[0].style.display = "none";
 			}
-
-			document.getElementById("rl-select-buttons-subgroup").style.display="block";
-			document.getElementById("rl-sort-buttons-subgroup").style.display="block";
 		}else{
-			triggerVerticalDisplay()
+			triggerVerticalDisplay();
 			if (itemListHeader.length > 0 && itemListHeader[0].style.display != "block"){
 				blockRHSnoneLHS(itemListHeader, itemList);
 			}
@@ -68,8 +65,8 @@
 
 
 	// so that the carret go back to its base position when the window get stretched in the width.
-	let carretBasePosition = function(){
-		let theCarret = document.getElementsByClassName("rl-item-list-caret");
+	let carretBasePosition = function(caretName){
+		let theCarret = document.getElementsByClassName(caretName);
 		if(theCarret.length>0){
 			theCarret[0].style.transform = 'rotate(0deg)';
 		}
@@ -98,8 +95,14 @@
 
 	function triggerRequestListDropdown(dropdownKind){
 		let currDiv = document.getElementById("rl-"+dropdownKind+"-buttons-subgroup");
-		console.log(currDiv)
 		let newDisplayStyle = currDiv.style.display=='none'?'block':'none';
 		currDiv.style.display = newDisplayStyle;
+
+		let caret = document.getElementsByClassName("rl-"+dropdownKind+"-caret")[0]
+		if(caret){
+			let rotationDeg = newDisplayStyle == "none"?0:180;
+			caret.style.transform = 'rotate('+rotationDeg+'deg)';
+		}
+
 	}
 </script>

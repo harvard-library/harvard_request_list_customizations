@@ -205,38 +205,79 @@ li.expanded_help_list_item {
     display: block;
   }
 
+  .rl-dropdown-trigger-box {
+    width:45%;
+    cursor: pointer;
+    border-color: black;
+    border: solid;
+    border-width: thin;
+    padding: 5px !important;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    font-family: "Trueno", "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+  }
+
   .rl-select-buttons, .rl-sort-buttons {
     width: 45%;
+    margin: 0px 0px 0px 0px;
   }
 
   #rl-select-buttons-subgroup {
     display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 95px;
   }
 
+  .request-list-item-default {
+    position: relative;
+  }
 
   #rl-sort-buttons-subgroup {
     display: none;
+    position: absolute;
+    right:0;
+    z-index: 1000;
+    top: 95px;
   }
 
   .rl-select-buttons a, .rl-sort-buttons a {
     text-align: left;
     border-top: none;
+
+    border-color: black;
+    width: 100%;
   }
-  .rl-select-buttons a:first-child, .rl-sort-buttons a:first-child {
-      border-radius:0px;
+
+  .rl-select-buttons a:first-child, 
+  .rl-sort-buttons a:first-child {
+      border-radius: 0px !important;
   } 
 
   .rl-select-buttons a:hover, .rl-sort-buttons a:hover {
     border: none;
   }
+
+  .rl-select-caret, .rl-sort-caret{
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    transform: rotate(0deg);
+  }
+
 }
 
-.rl-dropdown-trigger-box {
+
+.rl-item-list-header.rl-item-list-header-custom {
   cursor: pointer;
   background-color: #dddedf !important;
   padding: 5px !important;
   margin-bottom: 10px;
   margin-top: 20px;
+  margin-left: 0px;
+  width:100%;
   text-transform: uppercase;
   font-family: "Trueno", "Helvetica Neue", Arial, sans-serif;
   font-size: 15px;
