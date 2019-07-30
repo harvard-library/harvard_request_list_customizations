@@ -12,8 +12,35 @@
 				lhs[0].style.display = "none";
 			}
 		}
+
+		let triggerVerticalDisplay = function(){
+			let selectDiv = document.getElementById("rl-select-buttons-subgroup");
+			let sortDiv = document.getElementById("rl-sort-buttons-subgroup");
+
+			selectDiv.classList.remove('btn-group');
+			selectDiv.classList.add('btn-group-vertical');
+
+			sortDiv.classList.remove('btn-group');
+			sortDiv.classList.add('btn-group-vertical');
+
+		}
+
+
+		let triggerHorizontalDisplay = function(){
+			let selectDiv = document.getElementById("rl-select-buttons-subgroup");
+			let sortDiv = document.getElementById("rl-sort-buttons-subgroup");
+
+			selectDiv.classList.remove('btn-group-vertical');
+			selectDiv.classList.add('btn-group');
+
+			sortDiv.classList.remove('btn-group-vertical');
+			sortDiv.classList.add('btn-group');
+		}
 		//786 pix chosen to be consistent with aspace-hvd-pui css changes.
 		if(window.innerWidth >= 768){
+
+
+			triggerHorizontalDisplay();
 			blockRHSnoneLHS(itemList, itemListHeader);
 			blockRHSnoneLHS(expandedHelpDiv, showMoreButton);
 			carretBasePosition();
@@ -21,7 +48,11 @@
 			if(backToTopContainer.length > 0){
 				backToTopContainer[0].style.display = "none";
 			}
+
+			document.getElementById("rl-select-buttons-subgroup").style.display="block";
+			document.getElementById("rl-sort-buttons-subgroup").style.display="block";
 		}else{
+			triggerVerticalDisplay()
 			if (itemListHeader.length > 0 && itemListHeader[0].style.display != "block"){
 				blockRHSnoneLHS(itemListHeader, itemList);
 			}
@@ -63,4 +94,12 @@
 			theCarret[0].style.transform = 'rotate('+rotationDeg+'deg)';
 		}
 	};
+
+
+	function triggerRequestListDropdown(dropdownKind){
+		let currDiv = document.getElementById("rl-"+dropdownKind+"-buttons-subgroup");
+		console.log(currDiv)
+		let newDisplayStyle = currDiv.style.display=='none'?'block':'none';
+		currDiv.style.display = newDisplayStyle;
+	}
 </script>
