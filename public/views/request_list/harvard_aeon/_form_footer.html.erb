@@ -29,7 +29,7 @@
       <div class="form-group col-sm-4 form-option-container">
         <label class="control-label date-options-label" title="Required"><%= t('plugin.request_list.options.date') %> *</label>
         <div class="input-group datepicker rl-datepicker">
-          <input class="date-field form-control rl-ha-list-input required"
+          <input class="date-field form-control required"
                  title="<%= t('plugin.request_list.options.date_help') %>"
                  data-format="mm/dd/yyyy"
                  data-date="<%= Date.today.strftime('%m/%d/%Y') %>"
@@ -52,22 +52,26 @@
     <div class="rl-ha-options-form" id="rl-photoduplication-options-form" data-request-type="photoduplication">
       <div class="form-group col-sm-3">
         <label class="control-label photoduplication-label" title="Required"><%= t('plugin.request_list.options.format') %> *</label>
+        <div class="type-request-select-box">
 	        <select name="Format" class="form-control rl-ha-list-input required">
 	          <option value="">...</option>
 	          <% handler.list_opts[:format_options].each do |option| %>
 	            <option value="<%= option %>"><%= option %></option>
 	          <% end %>
 	        </select>
+        </div>
       </div>
 
       <div class="form-group col-sm-3 form-option-container">
         <label class="control-label option-delivery-label" title="Required"><%= t('plugin.request_list.options.delivery') %> *</label>
+        <div class="type-request-select-box">
 	        <select name="ShippingOption" class="form-control rl-ha-list-input required">
 	          <option value="">...</option>
 	          <% handler.list_opts[:delivery_options].each do |option| %>
 	            <option value="<%= option %>"><%= option %></option>
 	          <% end %>
 	        </select>
+        </div>
       </div>
 
       <div class="form-group col-sm-2 form-option-container">
@@ -91,7 +95,7 @@
       <label class="control-label notes-question-label"><%= t('plugin.request_list.options.notes') %></label>
       <textarea name="Notes"
                 rows="3"
-                class="form-control rl-ha-list-input"
+                class="form-control rl-ha-list-input notes-question-textarea"
                 title="<%= t('plugin.request_list.options.notes_help') %>"
                 maxlength="65536"></textarea>
     </div>
@@ -100,15 +104,8 @@
 <div class="row">
   <div class="col-sm-8"></div>
   <div class="col-sm-2 submit-button-panel">
-    <div class="pull-right">
+    <div class="rl-submit-button">
       <button type="submit" class="btn btn-secondary submit-requests"><%= t('plugin.request_list.submit_button_label') %></button>
     </div>
   </div>
-</div>
-
-
-<div class="col-sm-8">
-</div>
-
-<div class="col-sm-2">
 </div>

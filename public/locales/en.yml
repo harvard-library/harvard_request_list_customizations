@@ -14,7 +14,7 @@ en:
       submit_button_label: Submit
       sent_items_message: |
        You submitted requests for %{sent} items. Your list has been sent to 
-       <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
+       <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
        To check the status of your request, log in to your HOLLIS Special Request account.
       email:
         list_button_label: Email List
@@ -31,7 +31,7 @@ en:
       title_message: |
         <p class="serif">
           Review items and use the form below to submit your requests to 
-          <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
+          <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
           HOLLIS Special Request is a separate system where you can manage the requests you've placed from special collections and archives.
         </p>
       print:

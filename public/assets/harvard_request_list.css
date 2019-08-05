@@ -19,17 +19,17 @@
 }
 
 
-.photoduplication-label, .option-delivery-label, .type-request-label, .date-options-label {
-  width: 200px !important;
+.photoduplication-label, .option-delivery-label, .type-request-label, .date-options-label, .notes-question-label {
+  width: 130px !important;
 }
 
 .form-control {
-  width: 350px;
+  width: 300px;
 }
 
-/*span.yes_for_publication {
-  width: 100%;
-}*/
+.notes-question-label {
+  vertical-align: top;
+}
 
 .rl-request-form-header {
     font-size: 120%;
@@ -127,7 +127,7 @@
 }
 
 .submit-button-panel.col-sm-2 {
-  width: 100%;
+  width: 607px;
 }
 
 .form-group.col-sm-4 {
@@ -137,6 +137,11 @@
 
 .no-pad.col-sm-10, .rl-main-content.col-sm-10{
   width: 100%;
+}
+
+.input-group.datepicker.rl-datepicker.date {
+  width: 300px;
+  padding: 0px;
 }
 
 .rl-datepicker {
@@ -191,6 +196,16 @@ li.expanded_help_list_item {
   display: none;
 }
 
+
+.rl-submit-button{
+  float: right;
+}
+
+.notes-question-textarea {
+  display:inline-block;
+  width:430px;
+}
+
 /*this part is applied when the screen is resized above 767px of width*/
 @media only screen and (min-width: 767px) {
   .form-group.col-sm-2 {
@@ -200,6 +215,23 @@ li.expanded_help_list_item {
 }
 
 @media only screen and (max-width: 767px) {
+
+  .input-group.datepicker.rl-datepicker.date {
+    width: 300px;
+    margin-left: 0px;
+  }
+
+  .notes-question-textarea {
+    margin-left: 10px;
+    display:block;
+    width:420px;
+  }
+
+  .rl-submit-button{
+    float: left;
+    margin-left: 15px;
+  }
+
   .rl-ha-publication-checkbox {
     margin-left: 10px;
   }
