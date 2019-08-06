@@ -123,7 +123,6 @@
 
 .back-to-top-button-container{
   display: none;
-  float: right;
 }
 
 .submit-button-panel.col-sm-2 {
@@ -157,6 +156,7 @@
 
 .rl-ha-notes-and-questions{
   width:100%;
+  margin-top: 2px; 
 }
 
 
