@@ -38,21 +38,21 @@ $(function() {
     }
     $('.rl-ha-options-form').hide();
     $('.rl-ha-item-form').hide();
-    if (selected.text == 'Reading room' || selected.text == 'View in library') {
-      $("#rl-readingroom-options-form").show();
-      $(".rl-ha-additional-fields").slideDown();
-      $('.rl-ha-questions-label').html($('.rl-ha-questions-label').data('other-label'));
-      $('.rl-ha-questions-input').attr('title', $('.rl-ha-questions-input').data('other-help'));
-    } else if (selected.text == 'Saved' || selected.text == 'Save to my HSR account') {
-      $("#rl-saved-options-form").show();
-      $(".rl-ha-additional-fields").slideDown();
-      $('.rl-ha-questions-label').html($('.rl-ha-questions-label').data('other-label'));
-      $('.rl-ha-questions-input').attr('title', $('.rl-ha-questions-input').data('other-help'));
-    } else if (selected.text == 'Photoduplication' || selected.text == 'Request copies') {
+    if (inputs['RequestType'] == 'Copy') {
       $("#rl-photoduplication-options-form").show();
       $(".rl-ha-additional-fields").slideDown();
       $('.rl-ha-questions-label').html($('.rl-ha-questions-label').data('photoduplication-label'));
       $('.rl-ha-questions-input').attr('title', $('.rl-ha-questions-input').data('photoduplication-help'));
+    } else if (inputs['RequestType'] == 'Loan' && inputs['UserReview'] == 'No') {
+      $("#rl-readingroom-options-form").show();
+      $(".rl-ha-additional-fields").slideDown();
+      $('.rl-ha-questions-label').html($('.rl-ha-questions-label').data('other-label'));
+      $('.rl-ha-questions-input').attr('title', $('.rl-ha-questions-input').data('other-help'));
+    } else if (inputs['RequestType'] == 'Loan' && inputs['UserReview'] == 'Yes') {
+      $("#rl-saved-options-form").show();
+      $(".rl-ha-additional-fields").slideDown();
+      $('.rl-ha-questions-label').html($('.rl-ha-questions-label').data('other-label'));
+      $('.rl-ha-questions-input').attr('title', $('.rl-ha-questions-input').data('other-help'));
     } else {
       $(".rl-ha-additional-fields").slideUp('normal', function() {
         var form = $(".rl-ha-options-form");
