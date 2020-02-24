@@ -4,7 +4,6 @@ en:
       aeon_button_label: My HOLLIS Special Request Account
       request_form_subtitle: SUBMIT REQUEST
       empty_list_message: To add items to this list use "Add to My Request List" when viewing materials you want to request. Return to this screen to submit requests. <br><br>
-      #existing_list_message: <b>Need to manage existing requests?</b> Log in to <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
       collection: Found In
       expand_help_label: Show more
       collapse_help_label: Show less
