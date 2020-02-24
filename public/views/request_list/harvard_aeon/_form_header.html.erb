@@ -9,16 +9,6 @@
   <input type="hidden" name="<%= name %>" value="<%= value  %>">
 <% end %>
 
-
-<a class="pull-right rl-ha-aeon-link"
-   title="<%= t('plugin.request_list.aeon_button_label') %>"
-   href="<%= handler.list_opts[:aeon_link_url]  %>"
-   target="<%= handler.list_opts.fetch(:form_target, '_self') %>">
-
-  <%= t("plugin.request_list.aeon_button_label") %>
-</a>
-
-
 <div class="rl-message rl-message-title">
 
   <div class="rl-ha-collapsed-help">
