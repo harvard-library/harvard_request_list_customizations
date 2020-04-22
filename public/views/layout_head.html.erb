@@ -23,15 +23,20 @@
 			let selectDiv = document.getElementById("rl-select-buttons-subgroup");
 			let sortDiv = document.getElementById("rl-sort-buttons-subgroup");
 
-			selectDiv.classList.remove('btn-group'+toRemove);
-			selectDiv.classList.add('btn-group'+toAdd);
-
-			sortDiv.classList.remove('btn-group'+toRemove);
-			sortDiv.classList.add('btn-group'+toAdd);
-
 			//to have consistent none/block disposition at resizing and on load. 
-			selectDiv.style.display = baseSubgroupDisplayStyle;
-			sortDiv.style.display = baseSubgroupDisplayStyle;
+			if (selectDiv) {
+				selectDiv.classList.remove('btn-group'+toRemove);
+				selectDiv.classList.add('btn-group'+toAdd);
+
+				selectDiv.style.display = baseSubgroupDisplayStyle;
+			}
+
+			if (sortDiv) {
+				sortDiv.classList.remove('btn-group'+toRemove);
+				sortDiv.classList.add('btn-group'+toAdd);
+
+				sortDiv.style.display = baseSubgroupDisplayStyle;
+			}
 		}		
 
 
