@@ -1,0 +1,16 @@
+<% item.form_fields.each {|r| r.each {|name, value| %>
+
+  <input type="hidden" name="<%= name %>" value="<%= value %>">
+
+<% }} %>
+
+<div class="rl-ha-excluded-request-types" style="display:none">
+  <% item.ext(:excluded_request_types).multi.map do |t| %>
+    <data value="<%= t.name %>"></data>
+  <% end %>
+</div>
+
+<div>
+
+
+</div>

@@ -3,7 +3,7 @@ en:
     request_list:
       aeon_button_label: My HOLLIS Special Request Account
       request_form_subtitle: SUBMIT REQUEST
-      empty_list_message: To add items to this list use "Add to My List" when viewing materials you want to request. Return to this screen to submit requests. <br><br> <b>Need to manage existing requests?</b> Log in to <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
+      empty_list_message: To add items to this list use "Add to My Request List" when viewing materials you want to request. Return to this screen to submit requests. <br><br>
       collection: Found In
       expand_help_label: Show more
       collapse_help_label: Show less
@@ -13,8 +13,8 @@ en:
       restrictions: Restrictions
       submit_button_label: Submit
       sent_items_message: |
-       You submitted requests for %{sent} items. Your list has been sent to 
-       <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
+       You submitted requests for %{sent} items. Your list has been sent to
+       <span class="hvd_hollis-login-link"><a href="https://aeon.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
        To check the status of your request, log in to your HOLLIS Special Request account.
       email:
         list_button_label: Email List
@@ -30,9 +30,11 @@ en:
           reproductions, you should submit your requests to HOLLIS Special Request.
       title_message: |
         <p class="serif">
-          Review items and use the form below to submit your requests to 
-          <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
-          HOLLIS Special Request is a separate system where you can manage the requests you've placed from special collections and archives.
+          Scroll down to review items on your list and submit requests to HOLLIS Special Request,
+          a separate Harvard Library system for managing requests for special collections and archives materials.
+        </p>
+        <p class="serif">
+          Need to manage existing requests? Login to <span class="hvd_hollis-login-link"><a href="https://aeon.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
         </p>
       print:
         title: Harvard Library HOLLIS for Archival Discovery List
@@ -46,6 +48,7 @@ en:
           - Items will only remain in this list for the duration of your browser session.
           - Requests for materials held off-site require at least one business day to process.
           - Some items may be grouped as a single request in HOLLIS Special Request.
+          - Some libraries require an appointment to use materials.
       options:
         request_type: Type of request
         date: Select date of visit
