@@ -14,7 +14,7 @@ en:
       submit_button_label: Submit
       sent_items_message: |
        You submitted requests for %{sent} items. Your list has been sent to
-       <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
+       <span class="hvd_hollis-login-link"><a href="https://aeon.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
        To check the status of your request, log in to your HOLLIS Special Request account.
       email:
         list_button_label: Email List
@@ -34,7 +34,7 @@ en:
           a separate Harvard Library system for managing requests for special collections and archives materials.
         </p>
         <p class="serif">
-          Need to manage existing requests? Login to <span class="hvd_hollis-login-link"><a href="https://aeontest.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
+          Need to manage existing requests? Login to <span class="hvd_hollis-login-link"><a href="https://aeon.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
         </p>
       print:
         title: Harvard Library HOLLIS for Archival Discovery List
