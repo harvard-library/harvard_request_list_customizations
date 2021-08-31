@@ -34,10 +34,7 @@
         <%=
           [
            {:val => title_attr.name, :class => 'rl-display-title', :uri => title_attr.uri},
-           {:val => item.date.name, :class => 'rl-display-date'},
-           {:val => item.extent.name, :class => 'rl-display-extent'},
-           {:val => item.extent.ext(:container_summary), :class => 'rl-display-container-summary'},
-           {:val => item.extent.ext(:physical_details), :class => 'rl-display-physical-details'}
+           {:val => item.date.name, :class => 'rl-display-date'}
           ].select {|s| !s[:val].empty?}.map {|m|
             disp = m[:uri] ? "<a href=\"#{app_prefix(m[:uri])}\">#{m[:val]}</a>" : m[:val]
             "<span class=\"#{m[:class]}\">#{disp}</span>"
