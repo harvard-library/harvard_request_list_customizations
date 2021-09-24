@@ -21,7 +21,7 @@ en:
         send_button_label: Send Email
         sent_message: Your list has been sent to %{email}.
         error_message: Your list was not sent. Please provide a validate email address.
-        from: '"HOLLIS for Archival Discovery" <do_not_reply@hulmail.harvard.edu>'
+        from: '"HOLLIS for Archival Discovery" <do_not_reply@harvard.edu>'
         subject: Harvard Library HOLLIS for Archival Discovery List
         header: |
           My Request List from
