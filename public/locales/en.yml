@@ -3,7 +3,7 @@ en:
     request_list:
       aeon_button_label: My HOLLIS Special Request Account
       request_form_subtitle: SUBMIT REQUEST
-      empty_list_message: To add items to this list use "Add to My Request List" when viewing materials you want to request. Return to this screen to submit requests. <br><br>
+      empty_list_message: To add items to this list click "Add to My Request List" when viewing materials you want to request. Return to this screen to submit requests to <span class="hvd_hollis-login-link"><a href="https://aeon.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>, a separate Harvard Library system for managing requests for special collections and archives materials. <br><br>HOLLIS Special Request will open in a new tab when you click Submit. Please create an account or log in to HOLLIS Special Request to complete the submission of your requests.<br><br><strong>Please note that not all repositories support this feature.</strong> If you do not see an option to “Add to my Request List” at the item level, please follow the directions found when clicking on the Request button at the top of a record.<br><br>
       collection: Found In
       expand_help_label: Show more
       collapse_help_label: Show less
@@ -29,8 +29,7 @@ en:
           reproductions, you should submit your requests to HOLLIS Special Request.
       title_message: |
         <p class="serif">
-          Scroll down to review items on your list and submit requests to HOLLIS Special Request,
-          a separate Harvard Library system for managing requests for special collections and archives materials.
+          Scroll down to review items on your list and submit requests to <span class="hvd_hollis-login-link"><a href="https://aeon.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request<i class="fa fa-external-link" aria-hidden="true"></i></a></span>, a separate Harvard Library system for managing requests for special collections and archives materials. HOLLIS Special Request will open in a new tab when you click Submit. Please create an account or log in to HOLLIS Special Request to complete the submission of your requests.
         </p>
         <p class="serif">
           Need to manage existing requests? Login to <span class="hvd_hollis-login-link"><a href="https://aeon.hul.harvard.edu/logon" target="harvard-library-requests">HOLLIS Special Request <i class="fa fa-external-link" aria-hidden="true"></i></a></span>.
